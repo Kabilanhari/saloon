@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Section (Salon Details & Image) -->
+        <div class="top-section">
+            <div class="salon-info">
+                <h2>Natural Beauty Salon, Spa and Wellness Center</h2>
+                <p>📍 319, Bin Souqat Centre, Rashidiya Branch, UAE.</p>
+                <p>⏰ 9:00 AM to 9:00 PM</p>
+                <p>⚡ Instant Booking</p>
+            </div>
+            <div class="salon-image">
+                <img src="salon.jpg" alt="Salon Image">
+            </div>
+        </div>
+
+        <!-- Bottom Section (Services & Cart) -->
+        <div class="bottom-section">
+            <!-- Sidebar: Service Categories -->
+            <div class="sidebar">
+                <h3>Services</h3>
+                <ul>
+                    <li onclick="showCategory('hair')">Hair Services</li>
+                    <li onclick="showCategory('beauty')">Beauty Services</li>
+                    <li onclick="showCategory('spa')">Spa Services</li>
+                </ul>
+            </div>
+
+            <!-- Service Selection -->
+            <div class="services">
+                <h3>Select Services</h3>
+                <div id="hair" class="category">
+                    <label><input type="checkbox" value="30" data-name="Haircut"> Haircut - $30</label>
+                    <label><input type="checkbox" value="300" data-name="Hair Color"> Hair Color - $300</label>
+                </div>
+                <div id="beauty" class="category hidden">
+                    <label><input type="checkbox" value="100" data-name="Facial"> Facial - $100</label>
+                    <label><input type="checkbox" value="150" data-name="Makeup"> Makeup - $150</label>
+                </div>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="cart">
+                <h3>Cart</h3>
+                <ul id="cart-list"></ul>
+                <p>Total: <span id="total">$0</span></p>
+                <button onclick="goToBooking()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

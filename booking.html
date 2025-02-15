@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Select Date & Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h2>Natural Beauty Salon, Spa & Wellness Center</h2>
+        <p>📍 Rashidiya Branch, UAE | ⏰ 9:00 AM - 9:00 PM</p>
+    </header>
+
+    <div class="container">
+        <div class="booking-section">
+            <h3>Select Staff</h3>
+            <div class="staff-selection">
+                <label><input type="radio" name="staff" value="No preference" checked> No preference</label>
+                <label><input type="radio" name="staff" value="Ryan"> Ryan</label>
+                <label><input type="radio" name="staff" value="John"> John</label>
+                <label><input type="radio" name="staff" value="Amaya"> Amaya</label>
+                <label><input type="radio" name="staff" value="Sam"> Sam</label>
+            </div>
+
+            <h3>Select Date</h3>
+            <div class="date-picker">
+                <button class="prev" onclick="changeDate(-1)">&lt;</button>
+                <span id="selected-date"></span>
+                <button class="next" onclick="changeDate(1)">&gt;</button>
+            </div>
+
+            <h3>Select Time</h3>
+<div class="time-slots" id="time-slots"></div>
+
+
+    <button id="proceed-btn">Book Now</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

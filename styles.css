@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    background: #3d3939;
+    padding: 20px;
+}
+
+.salon-info {
+    width: 50%;
+}
+
+.salon-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bottom-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background: #eee;
+    padding: 10px;
+}
+
+.services {
+    width: 50%;
+    padding: 10px;
+}
+
+.cart {
+    width: 30%;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+button {
+    background: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.time-slot {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #f5f0f0;
+    background: #121010;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.time-slot:hover {
+    background: #f0e8e8;
+}
+
+.time-slot.selected {
+    background: #007bff;
+    color: #eee6e6;
+    border-color: #0056b3;
+}
